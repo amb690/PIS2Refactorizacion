@@ -2,7 +2,8 @@ package org.pis2refactoring;
 
 import java.util.Enumeration;
 
-public class HtmlStatement {
+public class HtmlStatement extends Statement{
+	@Override
 	public String value(Customer aCustomer){
 		Enumeration<Rental> rentals = aCustomer.getRentals();
 		  String result = headerString(aCustomer);

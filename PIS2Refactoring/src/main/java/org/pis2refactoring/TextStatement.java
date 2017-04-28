@@ -2,7 +2,8 @@ package org.pis2refactoring;
 
 import java.util.Enumeration;
 
-public class TextStatement {
+public class TextStatement extends Statement{
+	@Override
 	public String value(Customer aCustomer){
 		Enumeration rentals = aCustomer.getRentals();
         String result = headerString(aCustomer);
