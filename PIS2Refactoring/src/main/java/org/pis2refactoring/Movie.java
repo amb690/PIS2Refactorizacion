@@ -34,7 +34,7 @@ public class Movie {
 	   
 	   public String getTitle (){
 	      return _title;
-	   };
+	   }
 	   
 	   double getCharge(int daysRented){
 	  	  return _price.getCharge(daysRented);

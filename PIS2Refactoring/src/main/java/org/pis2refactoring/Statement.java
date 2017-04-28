@@ -5,11 +5,13 @@ import java.util.Enumeration;
 public abstract class Statement {
 	public String value(Customer aCustomer){
 		Enumeration rentals = aCustomer.getRentals();
+		StringBuilder stb = new StringBuilder();
         String result = headerString(aCustomer);
         while (rentals.hasMoreElements()) {
             Rental each = (Rental) rentals.nextElement();
-            result += eachRentalString(each);
+            stb.append(eachRentalString(each));
         }
+        result+=stb.toString();
         result += footerString(aCustomer);
         return result;
 	}

@@ -4,10 +4,10 @@ public class ChildrensPrice extends Price {
 
 	@Override
 	int getPriceCode() {
-		// TODO Auto-generated method stub
 		return Movie.CHILDRENS;
 	}
 
+	@Override
 	double getCharge(int daysRented){
 		double result = 1.5;
 		if (daysRented > 3)
