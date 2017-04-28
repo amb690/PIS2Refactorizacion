@@ -1,4 +1,4 @@
-package PIS2Refactoring.PIS2Refactoring;
+package org.pis2refactoring;
 
 public class Movie {
 	   public static final int  CHILDRENS = 2;

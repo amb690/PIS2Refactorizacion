@@ -1,4 +1,8 @@
-package PIS2Refactoring.PIS2Refactoring;
+package org.pis2refactoringtest;
+
+import org.pis2refactoring.Customer;
+import org.pis2refactoring.Movie;
+import org.pis2refactoring.Rental;
 
 import junit.framework.TestCase;
 

@@ -1,4 +1,4 @@
-package PIS2Refactoring.PIS2Refactoring;
+package org.pis2refactoring;
 
 import java.util.Enumeration;
 import java.util.Vector;
