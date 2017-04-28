@@ -27,10 +27,6 @@ public class PIS2RefactoringTest extends TestCase{
         assertEquals("Godzilla", this.movie.getTitle());
     }
 	
-	public void testPriceMovie() {
-        assertEquals(5, this.movie.getPriceCode());
-    }
-	
 	public void testCreateCustomer() {
         assertEquals("Alberto", this.customer.getName());
     }
