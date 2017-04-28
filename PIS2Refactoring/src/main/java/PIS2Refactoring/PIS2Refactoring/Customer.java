@@ -26,6 +26,7 @@ public class Customer {
           while (rentals.hasMoreElements()) {
               double thisAmount = 0;
               Rental each = (Rental) rentals.nextElement();
+              // extracting the amount calculation
               thisAmount = amountFor(each);
               // add frequent renter points
               frequentRenterPoints ++;
