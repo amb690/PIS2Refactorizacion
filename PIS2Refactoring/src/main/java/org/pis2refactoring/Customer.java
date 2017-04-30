@@ -24,18 +24,7 @@ public class Customer {
       }
 	   
 	  public String htmlStatement(){
-		  StringBuilder stb = new StringBuilder();
-		  Enumeration<Rental> rentale= Collections.enumeration(this.rentals);
-		  String result = "<H1>Rentals for <EM>" + getName() + "</EM></H1><P>\n";
-		  while (rentale.hasMoreElements()) {
-              Rental each = rentale.nextElement();
-              stb.append("\t" + each.getMovie().getTitle()+ ": " + each.getMovie().getTitle() + ": " + each.getCharge() + "<BR>\n");
-          }
-		  result+=stb.toString();
-          //add footer lines
-          result +=  "<P>You owe <EM>" + getTotalCharge() + "</EM><P>\n";
-          result += "On this rental you earned <EM>" + getTotalFrequentRenterPoints() + "</EM> frequent renter points<P>";
-		  return result;
+		  return new HtmlStatement().value(this);
 	  }
 	   
 	  public double getTotalCharge(){
