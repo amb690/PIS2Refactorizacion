@@ -17,11 +17,11 @@ public class Rental {
       return this.movie;
     } 
 
-    double getCharge(){
+    public double getCharge(){
     	return this.movie.getCharge(this.daysRented);
     }
     
-    int getFrequentRenterPoints(int daysRented){
+    public int getFrequentRenterPoints(int daysRented){
         if ((this.movie.getPriceCode() == Movie.NEW_RELEASE) && daysRented > 1)
         	return 2;
         else

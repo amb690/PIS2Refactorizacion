@@ -16,9 +16,9 @@ public abstract class Statement {
         return result;
 	}
 	
-	public abstract String headerString(Customer aCustomer);
+	protected abstract String headerString(Customer aCustomer);
 	
-	public abstract String eachRentalString(Rental aRental);
+	protected abstract String eachRentalString(Rental aRental);
 	
-	public abstract String footerString(Customer aCustomer);
+	protected abstract String footerString(Customer aCustomer);
 }
